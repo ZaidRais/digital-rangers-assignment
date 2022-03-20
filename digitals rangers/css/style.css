@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --green:#41c131;
+  }
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background:var(--green);
+    color:#fff;
+  }
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+
+  section{
+    padding:2rem 9%;
+  }
+
+  /* ------------------------------------------------------------ header section ----------------------------------------------------  */
+
+  .heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--green);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+
+
+  header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:#fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  }
+
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#3d3d3d;
+    text-transform: uppercase;
+  }
+  
+  header .logo span{
+    color:var(--green);
+  }
+  
+  header .navbar a{
+    color:#3d3d3d;
+    font-size: 2rem;
+    margin:0 2rem;
+  }
+  
+  header .navbar a:hover{
+    color:var(--green);
+    text-decoration: underline;
+    
+  }
+  
+  header .icons i{
+    font-size: 2.5rem;
+    color:#3d3d3d;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  
+  header .icons i:hover{
+    color:var(--green);
+  }
+  
+  header .search-bar-container{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    padding:1.5rem 2rem;
+    background:#333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  header .search-bar-container #search-bar{
+    width:100%;
+    padding:1rem;
+    text-transform: none;
+    color:#333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+  }
+  
+  header .search-bar-container label{
+    color:#fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+  }
+  
+  header .search-bar-container label:hover{
+    color:var(--green);
+  }
+
+  #menu-bar{
+    color:#3d3d3d;
+    border:.1rem solid #c0abab;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding:.5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+
+ /* --------------------------------------------- first section ---------------------------------------------------------------------   */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.home  img {
+    margin-top: 10rem;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+
+
+
+.background{
+    background: url('../img/Shushen-Herbals-About-Us-03.png');
+    background-size: 100% 100% !important;
+    height: 40vh; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 100%;    
+}
+
+.sec2-title h1 {
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  top: 10rem;
+  font-size: 2.5rem;
+  padding-top: 45px;
+  font-weight: 900;
+}
+
+.sec2-title p {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  top: 10rem;
+  font-size: 2rem;
+  margin-top: 21px;
+  font-weight: 600;
+  margin-left: 6.2rem;
+  margin-right: 7rem;
+}
+
+
+.sec-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-4 img {
+    margin-bottom: -7rem;
+    width: 30%;
+    object-fit: cover;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------- story section ------------------------------------------------------------  */
+
+.story .story-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.story .story-title h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.story .story-title span {
+  color: #3d3d3d;
+}
+
+.story .story-para{
+  margin-top: 2rem;
+}
+
+.story .story-para p{
+  font-size: 2rem;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: #3d3d3d;
+}
+
+.story .story-para h1{
+  font-size: 2rem;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: #3d3d3d;
+}
+
+.story .story-image{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.story .story-image .image-1{
+  display: flex;
+  flex:1 1 35rem;
+}
+.story .story-image .image-2{
+  display: flex;
+  flex:1 1 35rem;
+}
+
+
+.story .story-image img{
+  width: 90%;
+}
+
+.story .story-para2 p{
+  font-size: 1.7rem;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: #3d3d3d;
+  padding-top: 2rem;
+}
+
+/* ======================================================= team section =========================================================  */
+
+.team{
+  background:  url(../img/Shushen-Herbals-About-Us-Subtraction.png);
+  background-size: 100% 100% !important;
+    height: 100vh; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 100%;    
+
+}
+
+.team .team-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.team .team-title h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.team .team-title  span {
+  color: #3d3d3d;
+}
+
+.team .team-image{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team .team-image .team-image1 {
+  display: flex;
+  flex:1 1 35rem;
+}
+
+.team .team-image .team-image1 img{
+  width: 100%;
+}
+
+
+.team .team-image .team-paras{
+  display: flex;
+  flex:1 1 35rem;
+  flex-wrap: nowrap;
+  font-size: 2rem;
+}
+
+
+.team .team-image .team-paras p{
+  font-size:2rem ;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+
+/* ============================================================ footer ============================================================  */
+
+.footer{
+  background:#333;
+  margin-top: 70rem;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2rem;
+  padding:.7rem 0;
+  color:#fff;
+  cursor: pointer;
+}
+
+.footer .box-container .box h3:hover{
+  color: var(--green);
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--green);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #d5d5d5;
+    text-decoration: none;
+}
+
+.fa:hover{
+	color: var(--green);
+	text-decoration: none;
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+
+
+
+  /* -------------------------------------------- media queries ----------------------------------------------------------- */
+
+  @media (max-width:1500px){
+    .footer{
+     
+      margin-top: 45rem;
+    }
+   
+  }
+
+@media (max-width:1200px){
+
+    html{
+      font-size: 55%;
+    }
+
+    .footer{
+     
+      margin-top: 30rem;
+    }
+  
+  }
+  
+  @media (max-width:991px){
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; right:0; left: 0;
+      background: #e3f5dd;
+      border-top: .1rem solid var(--green);
+      padding:1rem 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+  
+    header .navbar a{
+      display: block;
+      border-radius: .5rem;
+      padding:1.5rem;
+      margin:1.5rem 0;    
+      background:#fff;
+    }
+
+    .background{
+     
+      height: 45vh; 
+     
+  }
+
+    .fa {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+  @media (max-width:650px){
+  
+    .story .story-image img{
+      
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer{
+     
+      margin-top: 90rem;
+    }
+
+    .sec2-title p {
+       
+      font-size: 1.5rem;
+      font-weight: 600;
+     
+    }
+
+  
+  }
+
+  
+    @media (max-width:450px){
+  
+      html{
+        font-size: 50%;
+      }
+    
+      .heading span{
+        font-size: 2.5rem;
+      }
+
+      .footer{
+     
+        margin-top: 70rem;
+      }
+
+      .sec2-title p {
+       
+        font-size: 1.5rem;
+        font-weight: 600;
+       
+      }
+
+      .sec-4 img {
+        margin-bottom: -6rem;
+        width: 40%;
+        object-fit: cover;
+        padding-top: 3rem;
+        cursor: pointer;
+    }
+  
+      
+    }
+
+
+    @media (max-width:360px){
+  
+     
+
+      .sec2-title p {
+       
+        font-size: 1.2rem;
+        font-weight: 600;
+       
+      }
+    }
+
+     @media (max-width:280px){
+  
+     
+
+        .sec2-title p {
+         
+          font-size: 1rem;
+          font-weight: 600;
+         
+        }
+        .footer{
+     
+          margin-top: 80rem;
+        }
+
+     }
+
+     @media (max-width:250px){
+  
+     
+
+      .sec2-title p {
+       
+        font-size: 0.9rem;
+        font-weight: 600;
+       
+      }
+      .footer{
+   
+        margin-top: 90rem;
+      }
+
+   }
